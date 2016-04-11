@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dianru="http://schemas.android.com/apk/res/com.lichaojun.note"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEF3FA"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/notebook_list"
+        style="@style/note_list_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" />
+    <!--  -->
+
+</RelativeLayout>

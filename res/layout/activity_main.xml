@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/off"
+    tools:context=".MainActivity"
+  
+     android:id="@+id/view" >
+
+<RelativeLayout
+    android:id="@+id/hidelayout"
+     android:layout_width="match_parent"
+     android:layout_marginTop="20dp"
+     android:layout_height="80dp"
+     android:alpha="20" 
+     android:background="@drawable/slidbg">
+       <LinearLayout
+        android:id="@+id/layout"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        
+         android:layout_marginRight="60dp"
+         android:orientation="vertical"/>
+
+       <ImageView
+           android:id="@+id/hidebtn"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:background="@drawable/hidebtn_bg"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="5dp" />
+
+ </RelativeLayout>
+       
+ <TextView
+        android:id="@+id/touch_area"
+        android:layout_width="match_parent"
+      android:layout_marginTop="20dp"
+     android:layout_height="120dp"
+      android:visibility="gone"
+        android:text=""
+       />
+
+ <TextView
+     android:id="@+id/opentn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+  
+     android:text="" />
+
+ 
+
+</RelativeLayout>

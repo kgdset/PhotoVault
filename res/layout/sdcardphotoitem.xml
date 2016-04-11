@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:paddingTop="2dip"  
+  
+    >  
+  
+    <ImageView   
+        android:id="@+id/scan_img"  
+        android:scaleType="centerCrop"  
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"  
+       android:padding="1dip"
+         android:background="@drawable/gridview_selector" />  
+    <ImageView   
+        android:id="@+id/scan_select"  
+         android:layout_height="wrap_content"  
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        
+       android:background="@drawable/folder"  
+        android:padding="4dip"  
+        /> 
+         <TextView
+             android:gravity="center"
+        android:id="@+id/nametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       
+          android:background="#a0646464"
+          android:textColor="#ffffff"
+        android:text="TextView" /> 
+          <TextView
+              android:gravity="center"
+        android:id="@+id/counttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+          android:textColor="#ffffff"
+           android:background="#a0646464"
+        android:text="TextView" />  
+          <TextView
+              android:gravity="center"
+        android:id="@+id/dirpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:visibility="gone"
+        android:text="TextView" />     
+</RelativeLayout> 

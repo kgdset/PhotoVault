@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="file_list_item_press">#a0A2A2A2</drawable>
+    <drawable name="file_list_item_normal">#a0CCCCCC</drawable>
+<color name="gray">#808080</color>
+<color name="normal">#c0ffffff</color>
+<color name="selector">#c0000000</color>
+<color name="pwdselector">#a0ffffff</color>
+<color name="pwdnormal">#50000000</color>
+<color name="titlenormal">#00000000</color>
+<color name="titlepress">#c0aaaaaa</color>
+<color name="listitemnormal">#50dddeee</color>
+<color name="listitepress">#f0ffffff</color>
+<color name="listviewfont">#ffffff</color>
+<color name="jifen">#ff9933</color>
+</resources>

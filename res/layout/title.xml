@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/topbar_bg"
+    android:alpha="2"
+     
+    android:focusable="false" >
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        
+        android:background="@drawable/back_btn_selector"
+      
+        tools:ignore="ContentDescription" />
+    
+<TextView
+            android:gravity="center"
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="6.0dp"
+            android:textColor="#ffffff"
+            android:ellipsize="end"
+            android:maxWidth="130dp"
+            android:singleLine="true"
+            android:text="大图"
+           
+            android:textSize="18.0sp" />
+<TextView
+            android:paddingLeft="9.0dp"
+            android:paddingRight="9.0dp"
+             android:layout_marginRight="40dp"
+            android:id="@+id/copybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/copy_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+               android:layout_centerVertical="true"
+                  android:visibility="gone"
+           
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+        <TextView
+            android:paddingLeft="9.0dp"
+            android:paddingRight="9.0dp"
+             android:layout_marginRight="3dp"
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/title_add_bg"
+            android:focusable="true"
+            android:gravity="center"
+               android:layout_centerVertical="true"
+               android:visibility="gone"
+        
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+</RelativeLayout>

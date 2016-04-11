@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:paddingTop="3dip"  
+  
+    >  
+  
+    <ImageView   
+        android:id="@+id/scan_img"  
+        android:scaleType="centerCrop"  
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"  
+        android:padding="1dip"
+         android:background="@drawable/gridview_selector"/>  
+    <ImageView   
+        android:id="@+id/scan_select"  
+         android:layout_height="wrap_content"  
+        android:layout_width="wrap_content"
+       
+       android:background="@drawable/gridview_checkbox_normal"  
+    
+       android:layout_marginBottom="10dp"
+       android:layout_marginRight="3dp"
+      android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+   
+      
+</RelativeLayout>  

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="menu_anim_duration">180</integer>
+	<integer name="menu_more_anim_duration">200</integer>
+	<integer name="book_anim_duration">800</integer>
+	<integer name="help_anim_duration">150</integer>
+	<integer name="help_show_anim_duration">500</integer>
+	<integer name="index_duration_step1">300</integer>
+	<integer name="index_duration_step2">500</integer>
+	<integer name="recommend_ad_delete_duration">400</integer>
+	<integer name="fragment_up_duration">500</integer>
+	<integer name="fragment_down_duration">500</integer>
+	<integer name="activity_down_duration">500</integer>
+	
+	<integer name="slider_switch_duration">500</integer>
+</resources>

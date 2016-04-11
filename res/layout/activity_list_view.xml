@@ -1,0 +1,591 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+   
+    tools:context=".ListViewActivity"
+     android:id="@+id/ReLayout" >
+  
+     
+    <ListView
+     
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:dividerHeight="1px"
+     android:divider="#00000000"
+    android:paddingTop="15dp"
+      android:paddingRight="8dp" 
+      android:paddingLeft="8dp" 
+      android:paddingBottom="69dp" 
+        android:scrollbars="none" >
+
+    </ListView>
+    
+ <RelativeLayout
+       android:id="@+id/linear3"
+     android:layout_width="match_parent"
+    android:layout_height="65dp"
+     android:layout_alignParentBottom="true"
+    
+     android:background="@drawable/listview_bottom_bg"
+    >
+      <ImageButton
+         android:id="@+id/imageButton2"
+         android:layout_width="90dp"
+         android:layout_height="63dp"
+     	 android:layout_alignParentBottom="true"
+     	    android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+         android:background="@drawable/camera_btn_selector" >
+     </ImageButton>
+
+      <ImageButton
+          android:id="@+id/ImageBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+       
+         android:layout_marginBottom="8dp"
+          android:background="@drawable/tabbar_selected" />
+<ImageButton
+          android:id="@+id/settingbtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+         android:layout_marginBottom="8dp"
+          android:background="@drawable/tabbar_2" />
+ </RelativeLayout>
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/settinglinnear"
+        android:orientation="vertical"
+           android:layout_marginBottom="69dp"
+           android:layout_marginTop="5dp"
+           android:paddingRight="8dp" 
+      android:paddingLeft="8dp" 
+  android:visibility="gone"
+   >
+
+		<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 android:scrollbars="none"  >
+        	<LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+      				
+      				<!--   ********************************************************************   -->
+      				
+      				<!--   ***********************************************************************   -->
+    
+      				
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="8dp"
+        					android:text="积分"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+							android:layout_marginTop="2dp"
+							android:layout_marginLeft="6dp"/> 
+      				<RelativeLayout      
+      				     android:id="@+id/aboutbtn11"				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			  android:paddingRight="3dp" 
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+            			    android:id="@+id/jifentxt"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="12dp"
+        					android:text="当前积分"
+        					android:textSize="17sp"		
+							android:textColor="#000000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      					<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="8dp"
+        					android:text="获取积分"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+							android:layout_marginTop="8dp"
+							android:layout_marginLeft="6dp"/> 
+							<RelativeLayout      
+      				     android:id="@+id/jf_dm_btn"				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			
+            			android:clickable="true"
+            			  android:paddingRight="3dp" 
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+            			   
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="12dp"
+        					android:text="积分墙"
+        					android:textSize="17sp"		
+							 android:textColor="#000000" /> 
+							<TextView
+        	        
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         
+        	        android:layout_centerVertical="true"
+        	        android:layout_centerHorizontal="true"
+        	           android:layout_alignParentRight="true"
+					android:layout_marginRight="30dp"
+        	      android:text="这里积分多多哦！"
+        	        android:textColor="#ffee00"
+        	        android:textSize="12sp" />
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+      				<RelativeLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:id="@+id/share"
+        	    android:layout_marginTop="1dp"
+        	    android:background="@drawable/preference_single_item"
+        	    android:clickable="true"
+        	    android:paddingRight="3dp" 
+        	    android:gravity="center_vertical" >
+
+        	    <TextView
+        	        android:id="@+id/versiontext"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:padding="12dp"
+        	        android:text="分享到朋友圈"
+        	        android:textColor="#000000"
+        	        android:textSize="17sp" />
+<TextView
+        	        android:id="@+id/wxfrendtxt"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+					android:layout_marginRight="30dp"
+        	        android:layout_centerVertical="true"
+        	        android:layout_centerHorizontal="true"
+        	        
+        	      
+        	        android:textColor="#ffee00"
+        	        android:textSize="12sp" />
+        	    <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_centerVertical="true"
+        	        android:scaleType="matrix"
+        	        android:src="@drawable/mm_submenu" />
+
+        	  
+        	</RelativeLayout>
+        	<RelativeLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:id="@+id/sharetowx"
+        	    android:background="@drawable/preference_single_item"
+        	    android:clickable="true"
+        	    android:paddingRight="3dp" 
+        	    android:layout_marginTop="1dp"
+        	    android:gravity="center_vertical" >
+
+        	    <TextView
+        	        android:id="@+id/versiontext"
+        	     
+        	         android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:padding="12dp"
+        	        android:text="分享到微信"
+        	       android:textColor="#000000"
+        	        android:textSize="17sp" />
+			<TextView
+        	        android:id="@+id/wxtxt"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         
+        	        android:layout_centerVertical="true"
+        	        android:layout_alignParentRight="true"
+					android:layout_marginRight="30dp"
+        	        android:textColor="#ffee00"
+        	        android:textSize="12sp" />
+        	    <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_centerVertical="true"
+        	        android:scaleType="matrix"
+        	        android:src="@drawable/mm_submenu" />
+
+        	  
+        	</RelativeLayout>
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        				  android:padding="8dp"
+        					android:text="酷炫"
+        					android:textSize="17sp"		
+						android:textColor="@color/listviewfont" 
+						
+							android:layout_marginLeft="6dp"/> 
+
+      				<RelativeLayout
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="wrap_content"
+      				    android:background="@color/listitemnormal"
+      				    android:clickable="true"
+      				   android:paddingRight="3dp" 
+      				    android:gravity="center_vertical" >
+
+      				    <TextView
+      				        android:id="@+id/textView1"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				       android:padding="12dp"
+      				        android:text="开启图案解锁"
+      				        android:textColor="#000000"
+      				        android:textSize="17sp" />
+      				    <TextView
+        	        android:id="@+id/wxtxt"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:text="积分达到1000可开启"
+        	        android:layout_centerVertical="true"
+        	        android:layout_alignParentRight="true"
+					android:layout_marginRight="64dp"
+        	        android:textColor="#ffee00"
+        	        android:textSize="12sp" />
+	<com.kgdset.photovault.SlipButton
+       android:id="@+id/PwdSwitch"
+          android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          />
+      				    
+      				</RelativeLayout>
+      				<RelativeLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:id="@+id/theme"
+        	    android:background="@drawable/preference_single_item"
+        	    android:clickable="true"
+        	    android:paddingRight="3dp" 
+        	    android:layout_marginTop="1dp"
+        	    android:gravity="center_vertical" >
+
+        	    <TextView
+        	        android:id="@+id/versiontext"
+        	     
+        	         android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:padding="12dp"
+        	        android:text="主题"
+        	       android:textColor="#000000"
+        	        android:textSize="17sp" />
+			
+        	    <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_centerVertical="true"
+        	        android:scaleType="matrix"
+        	        android:src="@drawable/mm_submenu" />
+
+        	  
+        	</RelativeLayout>
+      				
+      				<!--   ***********************************************************************   -->
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        				  android:padding="8dp"
+        					android:text="升级到正式版"
+        					android:textSize="17sp"		
+						android:textColor="@color/listviewfont" 
+						
+							android:layout_marginLeft="6dp"/> 
+
+      				<RelativeLayout
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="wrap_content"
+      				    android:background="@color/listitemnormal"
+      				    android:clickable="true"
+      				   android:paddingRight="3dp" 
+      				    android:gravity="center_vertical" >
+
+      				    <TextView
+      				        android:id="@+id/textView1"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				       android:padding="12dp"
+      				        android:text=" 无广告正式版 "
+      				        android:textColor="#000000"
+      				        android:textSize="17sp" />
+      				      <TextView
+        	        android:id="@+id/wxtxt"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:text="积分达到11000可开启"
+        	        android:layout_centerVertical="true"
+        	        android:layout_alignParentRight="true"
+					android:layout_marginRight="64dp"
+        	        android:textColor="#ffee00"
+        	        android:textSize="12sp" />
+	<com.kgdset.photovault.SlipButton
+       android:id="@+id/adbtn"
+          android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          />
+      				    
+      				</RelativeLayout>
+      				<!--   ********************************************************************   -->
+      				
+      				<!--   ***********************************************************************   -->
+      			
+
+      				<!--   ***********************************************************************   -->     
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="8dp"
+        					android:text="安全"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+							android:layout_marginLeft="6dp"/> 	
+
+        	<RelativeLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:id="@+id/changepwd"
+        	    android:paddingRight="3dp" 
+        	    android:background="@drawable/preference_single_item"
+        	    android:clickable="true"
+        	    android:gravity="center_vertical" >
+
+        	    <TextView
+        	        android:id="@+id/versiontext"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	         android:padding="12dp"
+        	        android:text="修改密码"
+        	        android:textColor="#000"
+        	        android:textSize="17sp" />
+
+        	    <ImageView
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_centerVertical="true"
+        	        android:scaleType="matrix"
+        	        android:src="@drawable/mm_submenu" />
+
+        	</RelativeLayout>
+        	
+        	 
+	<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        				  android:padding="8dp"
+        					android:text="隐私"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+						
+							android:layout_marginLeft="6dp"/> 
+
+      				<RelativeLayout
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="wrap_content"
+      				    android:background="@color/listitemnormal"
+      				    android:clickable="true"
+      				   android:paddingRight="3dp" 
+      				    android:gravity="center_vertical" >
+
+      				    <TextView
+      				        android:id="@+id/textView1"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				       android:padding="12dp"
+      				        android:text="后台唤醒重输密码"
+      				        android:textColor="#000"
+      				        android:textSize="17sp" />
+	<com.kgdset.photovault.SlipButton
+       android:id="@+id/wiperSwitch1"
+          android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          />
+      				    
+      				</RelativeLayout>
+      				<TextView
+      				       android:layout_marginLeft="10dp"
+      				       android:layout_marginRight="10dp"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				        android:padding="8dp"
+      				        android:text="开启后，从后台切换回本程序时，进入手电筒界面，保证隐蔽性。"
+      				        android:textColor="#ffffff"
+      				         />
+      				<RelativeLayout
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="wrap_content"
+      				   android:background="@color/listitemnormal"
+      				    android:clickable="true"
+      				    android:paddingRight="3dp" 
+      				    android:gravity="center_vertical" >
+
+      				    <TextView
+      				        android:id="@+id/textView1"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				        android:padding="12dp"
+      				        android:text="隐藏入口"
+      				        android:textColor="#000"
+      				        android:textSize="17sp" />
+	<com.kgdset.photovault.SlipButton
+       android:id="@+id/hidelockswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"/>
+      				    
+      				</RelativeLayout>
+      				<TextView
+      				       android:layout_marginLeft="10dp"
+      				       android:layout_marginRight="10dp"
+      				        android:layout_width="wrap_content"
+      				        android:layout_height="wrap_content"
+      				        android:padding="8dp"
+      				        android:text="隐藏手电筒界面的滑动锁，隐藏后位置和操作方式不变。"
+      				        android:textColor="#ffffff"
+      				         />
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="8dp"
+        					android:text="更新"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+							android:layout_marginTop="8dp"
+							android:layout_marginLeft="6dp"/> 
+      				<RelativeLayout      
+      				     android:id="@+id/updatebtn"				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			  android:paddingRight="3dp" 
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="12dp"
+        					android:text="检查更新 "
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="8dp"
+        					android:text="关于"
+        					android:textSize="17sp"		
+							android:textColor="@color/listviewfont" 
+							android:layout_marginTop="8dp"
+							android:layout_marginLeft="6dp"/> 
+							<RelativeLayout      
+      				     android:id="@+id/pingfen"				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			  android:paddingRight="3dp" 
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="12dp"
+        					android:text="给个好评吧"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      					
+      				<RelativeLayout      
+      				     android:id="@+id/aboutbtn"				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			 android:layout_marginTop="1dp"
+            			  android:paddingRight="3dp" 
+            			android:background="@drawable/preference_single_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					  android:padding="12dp"
+        					android:text="关于应用"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+        	</LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+  
+</RelativeLayout>
